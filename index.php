@@ -90,7 +90,7 @@ input[type="submit"]:hover {
 <div id="content">
 <img src="http://biosector01.com/images/FinalLogoNewHR.png" width="400" alt="BS01 Logo" />
 <form action="search.php" method="get">
-<input type="text" name="query" placeholder="Search" value=""><br />
+<input type="text" name="query" placeholder="Search" value autofocus><br />
 <input type="submit" value>
 <input type="hidden" name="search" value="1">
 </form>

@@ -25,6 +25,7 @@ body {
         background-attachment: fixed !important;
         background-size: cover !important;
         text-align: center;
+        height: 100%;
 }
 
 input[type="text"] {
@@ -62,6 +63,8 @@ input[type="submit"]:hover {
                 position: relative;
                 top: 40%;
                 transform: translateY(-60%);
+                -webkit-transform: translateY(-60%);
+                -ms-transform: translateY(-60%);
         }
 }
 

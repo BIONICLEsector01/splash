@@ -1,15 +1,14 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 @font-face {
-        font-family: 'GoudyTrajan';
-        src: url('http://biosetor01.com/resources/goudytrajan-webfont.eot');
-        src: url('http://biosector01.com/resources/goudytrajan-webfont.eot?#iefix') format('embedded-opentype'),
-        url('http://biosector01.com/resources/goudytrajan-webfont.woff') format('woff'),
-        url('http://biosector01.com/resources/GoudyTrajan.ttf') format('truetype'),
-        url('http://biosector01.com/resources/goudytrajan-webfont.svg#goudytrajanregular') format('svg');
+        font-family: 'TrademakerLight';
+        src: url('http://biosetor01.com/resources/TrademakerLight/TrademakerLight.eot');
+        src: url('http://biosector01.com/resources/TrademakerLight/TrademakerLight.eot?#iefix') format('embedded-opentype'),
+        url('http://biosector01.com/resources/TrademakerLight/TrademakerLight.woff') format('woff'),
+        url('http://biosector01.com/resources/TrademakerLight/TrademakerLight.ttf') format('truetype'),
+        url('http://biosector01.com/resources/TrademakerLight/TrademakerLight.svg#TradeMarker-Light') format('svg');
         font-style: normal;
 }
-
 * {
         padding: 0;
         margin: 0;
@@ -30,11 +29,11 @@ input[type="text"] {
         border-radius: 4px;
         padding: 11px 10px 9px;
         font-size: 1.5em;
-        font-family: "GoudyTrajan", serif;
+        font-family: "TrademakerLight", serif;
 }
 
 input[type="submit"] {
-        background-image: url('https://www.harrellsecurities.com/owncloud/core/img/actions/confirm.svg');
+        background-image: url('http://biosector01.com/resources/search.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-color: transparent;
@@ -43,42 +42,48 @@ input[type="submit"] {
         height: 40px;
         border: 0;
         position: relative;
-        top: -43px;
-        left: 230px;
+        top: -44px;
+        left: 225px;
         cursor: pointer;
 }
 
 input[type="submit"]:hover {
         opacity: .7;
 }
-
 /* Desktop only */
 @media screen and (min-device-width: 480px) {
-        #content {
-                position: relative;
-                top: 40%;
-                transform: translateY(-60%);
-                -webkit-transform: translateY(-60%);
-                -ms-transform: translateY(-60%);
-        }
+    #content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-60%);
+        -webkit-transform: translateY(-60%);
+        -ms-transform: translateY(-60%);
+    }
+
+    img {
+        max-width:400px;
+    }
 }
 
 /* Mobile only */
 @media screen and (max-device-width: 480px) {
-        #content {
-                position: relative;
-                top: 2em;
-        }
+    #content {
+        position: relative;
+        top: 2em;
+    }
+    body {
+        background: #a8dae3 url('http://biosector01.com/images/mobile.jpg') no-repeat center top fixed !important;
+        background-size: cover !important;
+    }
+    img {
+        max-width:200px;
+    }
 
-        img {
-                max-width: 300px;
-        }
+    input[type="text"] {
+        width: 250px;
+    }
 
-        input[type="text"] {
-                width: 400px;
-        }
-
-        input[type="submit"] {
-                left: 180px;
-        }
+    input[type="submit"] {
+        left: 100px;
+    }
 }

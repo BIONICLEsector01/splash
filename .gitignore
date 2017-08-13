@@ -1,8 +1,0 @@
-# Ignore everything
-*
-
-# Except for these
-!.gitignore
-!index.php
-!search.php
-!styles.css

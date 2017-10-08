@@ -1,6 +1,6 @@
 getBackgroundData();
 getUserInfo();
-var searchSuggestions = new MWSearchSuggestions({"wiki": "../../wiki/"});
+var searchSuggestions = new MWSearchSuggestions({"wiki": "../../w/"});
 
 document.getElementById("sidebar-opener").addEventListener("click", function() {
   document.body.classList.toggle("sidebar-open"); //IE 10+

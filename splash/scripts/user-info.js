@@ -8,7 +8,7 @@ function getUserInfo() {
   //Note that we can't use JSONP (i.e. putting the below URL in a script tag and setting a callback function),
   //because if we do, it will always return as if the user is logged out.
   //See https://www.mediawiki.org/wiki/API:Data_formats#Callback_restrictions
-  userInfo.open("GET", "../../wiki/api.php?action=query&meta=userinfo&uiprop=hasmsg|blockinfo&format=json", true);
+  userInfo.open("GET", "../../w/api.php?action=query&meta=userinfo&uiprop=hasmsg|blockinfo&format=json", true);
   userInfo.send();
 }
 
@@ -35,9 +35,9 @@ function setUserInfo(response) {
       //if there are new messages
       linkElement.setAttribute("title", "You have new messages");
       avatarElement.parentNode.classList.add("new-messages"); //IE 10+
-      linkElement.setAttribute("href", "wiki/index.php/User_talk:" + response.query.userinfo.name);
+      linkElement.setAttribute("href", "wiki/User_talk:" + response.query.userinfo.name);
     } else {
-      linkElement.setAttribute("href", "wiki/index.php/User:" + response.query.userinfo.name);
+      linkElement.setAttribute("href", "wiki/User:" + response.query.userinfo.name);
     }
   }
 }

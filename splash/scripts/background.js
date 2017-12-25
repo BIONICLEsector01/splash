@@ -21,8 +21,8 @@ function getBackgroundData() {
   //the HTML directly, we let Yahoo! Query Language do the work for us. It'll make the original
   //request for us, then we can pull the page from Yahoo instead of from biosector01.com.
   //Then the whole page shows up here as desired. Problem solved. Credit to Derek Gathright
-  //on StackOverflow: http://stackoverflow.com/a/2679304
-  backgroundApiCall.open("GET", "http://biosector01.com/w/index.php?title=BIONICLEsector01:Splash&action=render", true);
+  //on StackOverflow: https://stackoverflow.com/a/2679304
+  backgroundApiCall.open("GET", "https://biosector01.com/w/index.php?title=BIONICLEsector01:Splash&action=render", true);
   backgroundApiCall.send();
 }
 

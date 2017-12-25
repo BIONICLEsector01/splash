@@ -105,7 +105,7 @@ MWSearchSuggestions.prototype.update = function(newText) {
   //variable, the global callback function can perform operations on this particular object.
   mostRecentlyUpdatedMWSearchSuggestions = this;
 
-  //see http://stackoverflow.com/a/2067584, http://stackoverflow.com/a/6879319 for why a script element is used
+  //see https://stackoverflow.com/a/2067584, https://stackoverflow.com/a/6879319 for why a script element is used
   this.apiCall = document.createElement("script");
   this.apiCall.src = this.wiki + "api.php?action=opensearch&search=" + newText +
                      "&redirects=resolve&limit=" + this.maxSuggestionCount + "&callback=updateSearchDropdown";
@@ -150,7 +150,7 @@ MWSearchSuggestions.prototype.makeSuggestionLink = function(title, link) {
   var searchResultLink = document.createElement("a");
   searchResultLink.href = link;
   searchResultLink.className = this.suggestionLinkClass;
-  //note on textContent: http://stackoverflow.com/a/24428100
+  //note on textContent: https://stackoverflow.com/a/24428100
   searchResultLink.textContent = title;
   return searchResultLink;
 };

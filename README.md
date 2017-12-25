@@ -1,4 +1,4 @@
 # splash
 Splash page for BIONICLEsector01
 
-http://biosector01.com
+https://biosector01.com

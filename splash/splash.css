@@ -27,8 +27,8 @@
 @font-face {
   font-family: "Franklin Gothic Book";
   src: local("Franklin Gothic Book"),
-       url(fonts/franklingothic-book-webfont.woff2) format("woff2"),
-       url(fonts/franklingothic-book-webfont.woff) format("woff");
+       url(../resources/fonts/franklingothic-book-webfont.woff2) format("woff2"),
+       url(../resources/fonts/franklingothic-book-webfont.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }

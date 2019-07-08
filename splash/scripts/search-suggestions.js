@@ -1,7 +1,7 @@
 var mostRecentlyUpdatedMWSearchSuggestions = null;
 
 function MWSearchSuggestions(settings) {
-  this.wiki = "https://en.wikipedia.org/w/";
+  this.wiki = "https://biosector01.com/w/";
   this.searchInputElement = document.getElementById("search-input-query");
   this.suggestionsOutputElement = document.getElementById("search-suggestions");
   this.maxSuggestionCount = 5;
